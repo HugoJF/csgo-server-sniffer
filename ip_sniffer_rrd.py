@@ -12,10 +12,7 @@ from urllib.request import urlopen
 
 
 path = os.getenv('RRD_PATH', '')
-print('Please input server IP to sniff: ', end='')
-ip = input()
-if not ip:
-    ip = '143.202.39.221'
+ip = os.getenv('IP', '143.202.39.221')
 
 html = urlopen("http://api.steampowered.com/ISteamApps/GetServersAtAddress/v1/?addr={0}".format(ip)).read().decode('utf-8')
 res = json.loads(html)
