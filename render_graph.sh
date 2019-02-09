@@ -32,6 +32,7 @@ CDEF:line6=sv6,sv1,sv2,sv3,sv4,sv5,sv6,+,+,+,+,+,UNKN,IF \
 CDEF:line7=sv7,sv1,sv2,sv3,sv4,sv5,sv6,sv7,+,+,+,+,+,+,UNKN,IF \
 CDEF:line8=sv8,sv1,sv2,sv3,sv4,sv5,sv6,sv7,sv8,+,+,+,+,+,+,+,UNKN,IF \
 CDEF:line9=sv9,sv1,sv2,sv3,sv4,sv5,sv6,sv7,sv8,sv9,+,+,+,+,+,+,+,+,UNKN,IF \
+VDEF:test=sv1,LAST \
 COMMENT:"        Name | Player Average | Max Players  | Current Players\l" \
 COMMENT:" \l" \
 AREA:sv1#3634c0:STACK:"Server #1\:" \
