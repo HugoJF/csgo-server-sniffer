@@ -78,7 +78,10 @@ LINE:line5#41045c \
 LINE:line6#52045f \
 LINE:line7#620360 \
 LINE:line8#650353 \
-LINE:line9#680345
+LINE:line9#680345 \
+COMMENT:" \l" \
+COMMENT:"Last update\:" \
+GPRINT:test:%c"\c":strftime
 
 rm graphs/player_count.png
 mv player_count.png graphs/player_count.png
