@@ -1,4 +1,4 @@
-rrdtool graph /home/hugo/rrdtool/player_count.png \
+rrdtool graph player_count.png \
 --imgformat PNG \
 --title="Total Players" \
 --vertical-label "Player amount" \
