@@ -1,4 +1,4 @@
-rrdtool graph /home/hugo/rrdtool/nice.png \
+rrdtool graph /home/hugo/rrdtool/player_count.png \
 --imgformat PNG \
 --title="Total Players" \
 --vertical-label "Player amount" \
@@ -79,3 +79,5 @@ LINE:line6#52045f \
 LINE:line7#620360 \
 LINE:line8#650353 \
 LINE:line9#680345
+
+mv player_count.png graphs/player_count.png
