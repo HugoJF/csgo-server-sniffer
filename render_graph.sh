@@ -80,5 +80,5 @@ LINE:line7#620360 \
 LINE:line8#650353 \
 LINE:line9#680345
 
-rm graph/player_count.png
+rm graphs/player_count.png
 mv player_count.png graphs/player_count.png
