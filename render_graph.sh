@@ -8,30 +8,30 @@ rrdtool graph player_count.png \
 --color=CANVAS#FEFEFE \
 --color=SHADEB#9999CC \
 --height=250 \
---upper-limit=120 \
+--upper-limit=95 \
 --lower-limit=0 \
 --grid-dash 0:1 \
 --no-gridfit \
 --watermark "Servidores de_nerdTV" \
 --slope-mode \
-DEF:sv1=143_202_39_221_27001.rrd:players:AVERAGE \
-DEF:sv2=143_202_39_221_27002.rrd:players:AVERAGE \
-DEF:sv3=143_202_39_221_27003.rrd:players:AVERAGE \
-DEF:sv4=143_202_39_221_27004.rrd:players:AVERAGE \
-DEF:sv5=143_202_39_221_27005.rrd:players:AVERAGE \
-DEF:sv6=143_202_39_221_27006.rrd:players:AVERAGE \
-DEF:sv7=143_202_39_221_27007.rrd:players:AVERAGE \
-DEF:sv8=143_202_39_221_27008.rrd:players:AVERAGE \
-DEF:sv9=143_202_39_221_27009.rrd:players:AVERAGE \
+DEF:sv1=170_81_43_200_27001.rrd:players:AVERAGE \
+DEF:sv2=170_81_43_200_27002.rrd:players:AVERAGE \
+DEF:sv3=170_81_43_200_27003.rrd:players:AVERAGE \
+DEF:sv4=170_81_43_200_27004.rrd:players:AVERAGE \
+DEF:sv5=170_81_43_200_27005.rrd:players:AVERAGE \
+DEF:sv6=170_81_43_200_27006.rrd:players:AVERAGE \
+DEF:sv7=170_81_43_200_27007.rrd:players:AVERAGE \
+DEF:sv8=170_81_43_200_27008.rrd:players:AVERAGE \
+DEF:sv9=170_81_43_200_27009.rrd:players:AVERAGE \
 CDEF:line1=sv1,sv1,UNKN,IF \
-CDEF:line2=sv2,sv1,sv2,+,UNKN,IF \
-CDEF:line3=sv3,sv1,sv2,sv3,+,+,UNKN,IF \
-CDEF:line4=sv4,sv1,sv2,sv3,sv4,+,+,+,UNKN,IF \
-CDEF:line5=sv5,sv1,sv2,sv3,sv4,sv5,+,+,+,+,UNKN,IF \
-CDEF:line6=sv6,sv1,sv2,sv3,sv4,sv5,sv6,+,+,+,+,+,UNKN,IF \
-CDEF:line7=sv7,sv1,sv2,sv3,sv4,sv5,sv6,sv7,+,+,+,+,+,+,UNKN,IF \
-CDEF:line8=sv8,sv1,sv2,sv3,sv4,sv5,sv6,sv7,sv8,+,+,+,+,+,+,+,UNKN,IF \
-CDEF:line9=sv9,sv1,sv2,sv3,sv4,sv5,sv6,sv7,sv8,sv9,+,+,+,+,+,+,+,+,UNKN,IF \
+CDEF:line2=sv2,sv1,sv2,ADDNAN,UNKN,IF \
+CDEF:line3=sv3,sv1,sv2,sv3,ADDNAN,ADDNAN,UNKN,IF \
+CDEF:line4=sv4,sv1,sv2,sv3,sv4,ADDNAN,ADDNAN,ADDNAN,UNKN,IF \
+CDEF:line5=sv5,sv1,sv2,sv3,sv4,sv5,ADDNAN,ADDNAN,ADDNAN,ADDNAN,UNKN,IF \
+CDEF:line6=sv6,sv1,sv2,sv3,sv4,sv5,sv6,ADDNAN,ADDNAN,ADDNAN,ADDNAN,ADDNAN,UNKN,IF \
+CDEF:line7=sv7,sv1,sv2,sv3,sv4,sv5,sv6,sv7,ADDNAN,ADDNAN,ADDNAN,ADDNAN,ADDNAN,ADDNAN,UNKN,IF \
+CDEF:line8=sv8,sv1,sv2,sv3,sv4,sv5,sv6,sv7,sv8,ADDNAN,ADDNAN,ADDNAN,ADDNAN,ADDNAN,ADDNAN,ADDNAN,UNKN,IF \
+CDEF:line9=sv9,sv1,sv2,sv3,sv4,sv5,sv6,sv7,sv8,sv9,ADDNAN,ADDNAN,ADDNAN,ADDNAN,ADDNAN,ADDNAN,ADDNAN,ADDNAN,UNKN,IF \
 VDEF:test=sv1,LAST \
 COMMENT:"        Name | Player Average | Max Players  | Current Players\l" \
 COMMENT:" \l" \
